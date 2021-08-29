@@ -50,6 +50,73 @@ const Index = ({ courses }) => {
     {/* end og HEADER  */}
        {/* showcase1  */}
 
+      <section className="showcase">
+        <div className="showcase-container case1">
+        <div className="inner-container">
+            <div className="inner-title">
+              <h1>Learn In-Demand Tech Skills</h1>
+            </div>
+            <div className="inner-text">
+              <p>
+Browse through our countless courses , Enroll and study at your own pace 
+              </p>
+              <Link href= "/register">
+       <button type="button" className="custom-btn btn-5">
+       Explore
+       </button>
+        </Link>
+            </div>
+            
+          </div>
+          <div className="showcase-img">
+            <img
+              src="https://media-exp1.licdn.com/dms/image/C5622AQG9Yycw7sjj0A/feedshare-shrink_2048_1536/0/1629818469601?e=1632960000&v=beta&t=1PfSgvqPTVzQXz0yzL1UROi7JZeg4n7-TB7nFR5CvSE"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    {/* showcase */}
+      <section className="showcase">
+        <div className="showcase-container case2">
+          <div className="showcase-img">
+            <img
+              src="https://media-exp1.licdn.com/dms/image/C5622AQEZevTppDK8ZA/feedshare-shrink_800/0/1629818469938?e=1632960000&v=beta&t=wB3RZd4fPmW2nvgGRa643c5ne8KfbYV8KwZz5m1qheY"
+              alt=""
+            />
+          
+          </div>
+          <div className="inner-container">
+            <div className="inner-title">
+              <h1 >Become an instructor</h1>
+            </div>
+            <div className="inner-text">
+              <p>
+              Get your course across to million of users and Increase your earnings
+              </p>
+              <Link href= "/register">
+       <button type="button" className="custom-btn btn-5">
+       Sign up
+       </button>
+        </Link>
+            </div>
+           
+          </div>
+        </div>
+      </section>
+      {/* Show Courses  */}
+      <h1 className="jumbotron text-center bg-primary square">
+        Online Education Marketplace
+      </h1>
+      <div className="container-fluid">
+        <div className="row">
+          {courses.map((course) => (
+            <div key={course._id} className="col-md-4">
+              <CourseCard course={course} />
+            </div>
+          ))}
+        </div>
+      </div>
     {/* FOOTER Section  */}
     
       </div>    
